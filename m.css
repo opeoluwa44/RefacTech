@@ -1,0 +1,11 @@
+background-color:black;
+    min-height: 100vh;
+    padding: 12rem 2rem 2rem 2rem;
+    background-image:linear-gradient(135deg,rgba(51, 245, 167, 0.726) 0%,
+    rgba(5, 67, 175, 0.658) 100%), url("../assets/green-g628e998ff_1280.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x:right;
+    background-position-y: bottom;
+    background-attachment: fixed;
+    object-fit: contain;
