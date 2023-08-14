@@ -850,5 +850,13 @@ footer .mailbox{
         font-size: clamp(1.5rem, .8vw, 3rem);
         
     }
+
+    .hero-text>*{
+        margin-bottom: 3rem;
+    }
+
+    h1 #typewriter {
+        margin-top: 5rem;
+    }
 }
 
