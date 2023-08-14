@@ -250,8 +250,7 @@ h1 span, h6 span{
     background:linear-gradient(150deg, hsla(138, 100%, 43%, 0.932) 0%, hsla(138, 100%, 26%, 0.918) 100%);
     color: #f2f2f2;
     border: 0;
-    max-width: 11.125rem;
-    width: 25%;
+    width: 11.125rem;
     height: 50px;
     font-size: 1rem;
     font-weight: 800;
