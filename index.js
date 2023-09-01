@@ -1,6 +1,7 @@
 const nav = document.querySelector(".primary-nav")
 const navToggle = document.querySelector(".menu")
 const header = document.querySelector(".header-container")
+const list = document.querySelectorAll("li")
 
 
 navToggle.addEventListener("click", ()=>{
@@ -18,14 +19,18 @@ navToggle.addEventListener("click", ()=>{
 })
 
 
+list.forEach(item=> {
+    item.addEventListener("click", function() {
+        list.forEach(item=> {
+            item.classList.remove("active")
+        })
 
-function makeMarquee(){
-    const title='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quod laudantium, voluptates ab id consectetur? Blanditiis corrupti veritatis sint possimus fugit ea quos odit odio rerum consequatur. Qui, unde consequuntur!'
-const marqueeText=Array(50).fill(title).join(' _ ')
-const marquee=document.querySelector('.marquee span')
-marquee.innerHTML+=marqueeText
-}
-makeMarquee()
+        this.classList.add("active")
+
+    })
+
+})
+
 
 
 window.addEventListener("scroll", ()=>{
@@ -42,7 +47,7 @@ window.addEventListener("scroll", ()=>{
 });
 
 var typed = new Typed('#typewriter', {
-    strings: ['<i>Tech</i> &amp; <i>Software /<</i>'],
+    strings: ['<i>BUILD</i>', '<i>DEPLOY</i>', ' <i>OPERATE</i>'],
     typeSpeed: 50,
     loop:true
   });
