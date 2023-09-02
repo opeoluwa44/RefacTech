@@ -101,19 +101,23 @@ li{
     margin: 2rem min(2rem, 4vw);
     font-size: 1.875rem;
     font-weight: 900;
+    position: relative;
+    z-index: 20;
 }
 
 .get-started{
     background:linear-gradient(150deg, hsla(138, 100%, 43%, 0.932) 0%, hsla(138, 100%, 26%, 0.918) 100%);
     color: #f2f2f2;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
     width: 80%;
     min-width: 10rem;
     font-size: 1rem;
     font-weight: 400;
     transition: all ease-in-out 200ms;
     border: 0;
+    position: relative;
+    z-index: 20;
 }
 
 .get-started:hover{
@@ -125,16 +129,18 @@ li{
     background-repeat: no-repeat;
     background-position: 50%;
     border-style: none;
-    background-size: 25px;
+    background-size: 20px;
     background-color:hsla(138, 100%, 26%, 0.918);
     display: flex;
-    padding: 1.5rem ;
+    padding: 1.2rem ;
     border: 0;
     margin: 2.2rem;
     position: relative;
     transition: transform 500ms ease;
     transform: rotate(0);
     border-radius: 5px;
+    position: relative;
+    z-index: 20;
 }
 
 .menu[aria-expanded="true"]{
@@ -150,8 +156,6 @@ li{
 }
 
 .primary-nav{
-    /*background-color:hsl(0, 0%, 23%/.1);
-    backdrop-filter: blur(1rem);*/
     background-color: #1b1b1b;
     margin: 0;
     position: fixed;
@@ -163,6 +167,7 @@ li{
     z-index: 5;
     transition: transform 500ms linear;
     transform: translateY(-180%);
+    z-index: -1;
 
 }
 
@@ -219,7 +224,7 @@ main{
 
 .hero-text{
     color: #f2f2f2;
-    margin: 25rem auto;
+    margin: 20rem auto;
     text-align: center;
     opacity: 0;
     animation: fadeIn 2s  1s  forwards;
@@ -232,11 +237,6 @@ main{
 
 .hero-text h1{
     font-size: 1.875rem;
-    line-height: 1.5;
-}
-
-.hero-text h6{
-    font-size: 1rem;
 }
 
 h1 span, h6 span{
@@ -249,7 +249,7 @@ h1 span, h6 span{
     color: #f2f2f2;
     border: 0;
     width: 11.125rem;
-    height: 50px;
+    height: 40px;
     font-size: 1rem;
     font-weight: 800;
     text-align: center;
@@ -479,7 +479,6 @@ h1 span, h6 span{
 /*Footer Section*/
 
 footer{
-    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -497,6 +496,7 @@ footer .contact{
     justify-self: center;
     align-self: center;
     text-align: center;
+    padding-block: 2rem;
 }
 
 .contact-heading{
@@ -507,7 +507,7 @@ footer .contact{
     line-height: 1.5rem;
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .socials > h5 {
@@ -519,13 +519,11 @@ footer .contact{
     gap: 1rem;
     align-items: center;
     margin: auto;
-    margin-top: 1rem;
-
 }
 
 .icon{
     background-color:#f2f2f2;
-    width: 30px;
+    width: 20px;
 }
 
 p .email-address {
@@ -589,7 +587,7 @@ p .email-address {
 
     footer .logo{
         margin: 0;
-        align-self: self-start;
+        align-self: center;
     }
 
     footer .contact{
@@ -612,7 +610,7 @@ p .email-address {
     }
 
     .get-started{
-        padding: 10px;
+        padding: 5px;
         font-size: 1.875rem;
     }
 
@@ -623,8 +621,6 @@ p .email-address {
     .primary-nav{
         display: flex;
         flex-direction: row;
-       /* background-color:hsl(var(--clr-white)/.1) ;
-        backdrop-filter: blur(1rem);*/
         margin: 1rem 0;
         position: unset;
         width:auto;
@@ -751,11 +747,6 @@ p .email-address {
 
     .primary-nav>*{
         font-size: clamp(1.5rem, .8vw, 3rem);
-        
-    }
-
-    .hero-text>*{
-        margin-bottom: 3rem;
     }
 }
 
